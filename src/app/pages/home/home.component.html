@@ -1,0 +1,27 @@
+<div class="main">
+<form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm(validateForm.value)">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Por favor ingrese el Nombre!">
+      <mat-form-field appearance="fill">
+        <input matInput type="text" nz-input formControlName="name" placeholder="Nombre" />
+      </mat-form-field>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Porfavor ingrese el Apellido!">
+      <mat-form-field appearance="fill">
+        <input matInput type="text" nz-input formControlName="lastName" placeholder="Apellido" />
+      </mat-form-field>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Por favor ingrese la edad!">
+      <mat-form-field appearance="fill">
+        <input matInput type="text" nz-input formControlName="Age" placeholder="Edad" />
+      </mat-form-field>
+    </nz-form-control>
+  </nz-form-item>
+  <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Guardar</button>
+</form>
+<app-table></app-table>
+</div>
